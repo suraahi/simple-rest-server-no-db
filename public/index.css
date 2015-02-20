@@ -1,0 +1,26 @@
+
+		body {
+    	background-color: #FFD1F1;
+		}
+
+		#daylist{
+		color: black;
+		margin: 20px 20px 20px 20px;
+		font-size: 20px;
+		font-family: arial;
+		
+		}
+		#onpge{
+			border-style: dotted;
+			background-color: #FED4FF;
+			padding-left: 20px;
+		}
+		#on_page{
+			border-style: dotted;
+			background-color: #FED4FF;
+			padding-left: 20px;
+			border-radius: 100%;
+		}
+		.shadow {
+  		  		box-shadow: 3px 3px 3px #888888;
+		}
