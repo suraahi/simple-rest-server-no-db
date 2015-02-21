@@ -10,6 +10,7 @@
 					'email' 		: $('input[name=email]').val(),
 
 				}
+				$("#daylist").validate();
 				//var name1 = {name,lastname,homephone,email};
 				//console.log(fromdata)
 				$.ajax({
@@ -17,9 +18,9 @@
 					url		: '/users',
 					data	: fromdata,
 					//datatype: 'json',
-					success	: function(res){
-						console.log(res);
-						document.getElementById('on_page').innerHTML = res.name+'<br>'+res.lastname+'<br>'+res.homephone+'<br>'+res.email;
+					success	: function(data){
+						console.log(data);
+						document.getElementById('on_page').innerHTML = data.name+'<br>'+data.lastname+'<br>'+data.homephone+'<br>'+data.email;
 					}   			
 					
 					
