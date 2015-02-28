@@ -1,0 +1,28 @@
+.nav-pills li{
+	 border-bottom: 1px solid #9E9E9E;
+}
+.nav-pills{
+	margin-left:20px;
+	text-indent:20px;
+	border:1px solid #9E9E9E;
+	border-radius:3px;
+}
+.nav-pills li:last-child{
+	border-bottom:none;
+}
+.pri{
+	float: left;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+.jumbotron {
+    width: 80%;
+    height: 100px;
+    background: linear-gradient(#C9C9C9, #F3F3F3);
+	border-radius:7px;
+	margin-left: 60px;
+}
+#ser{
+	margin-left: 14px;
+}
+
