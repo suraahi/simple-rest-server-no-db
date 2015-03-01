@@ -21,8 +21,28 @@
     background: linear-gradient(#C9C9C9, #F3F3F3);
 	border-radius:7px;
 	margin-left: 60px;
+	
 }
 #ser{
 	margin-left: 14px;
+}
+.block{
+	font-size: 50px;
+}
+.item{
+	margin-left: 10px;
+	font-size: 20px;
+}
+.des{
+	margin-right: 50px;
+	font-size: 20px;
+		
+}
+.pri{
+	
+	margin-left: 10px;
+	font-size: 20px;
+	margin-top: 10px;
+
 }
 

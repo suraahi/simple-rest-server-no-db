@@ -5,8 +5,8 @@
 				
 				var formdata ={
 					'name' 			: $('input[name=item]').val(),
-					'description'	: $('name[name=des]').val(),
-					'price'			: $('name[name=price]').val(),
+					'description'	: $('input[name=des]').val(),
+					'price'		: $('input[name=price]').val(),
 				}
 				console.log(formdata);
 				$.ajax({
@@ -16,8 +16,16 @@
 					datatype: 'json',
 					
 						success	: function(data){
-							console.log(data)
-						document.getElementById('on_jumb').innerHTML = data.name+'<br>'+data.description+'<br>'+data.price;
+							//console.log(data)
+							var input_val 	= data.name;
+							$( ".item" ).append(input_val);
+							var dec_val		= data.description;
+							$( ".des" ).append(dec_val);
+							var dec_pri		= data.price;
+							$( ".pri" ).append(dec_pri);
+							
+							//console.log(input_val)
+						 	 
 					}
 				})
 			})			
