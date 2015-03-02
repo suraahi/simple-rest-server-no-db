@@ -26,16 +26,19 @@
 	color: red;
 }
 
-
 .container{
 	background: linear-gradient(#C9C9C9, #F3F3F3);
 	margin-left: 60px;
 }
 .glyphicon-remove-sign{
 	border-radius: 100%;
-	background: linear-gradient(#C9C9C9, #F3F3F3);
+	padding: 0px;
+	
 }
 .pri{
 	margin-right: 60px;
+}
+.ser{
+	margin-left: 11px;
 }
 
