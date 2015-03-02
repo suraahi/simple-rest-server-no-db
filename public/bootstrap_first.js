@@ -1,5 +1,6 @@
 	$(document).ready(function(){
-	console.log("hi")
+		
+	
 			$('#buton').click(function(event){	
 			event.preventDefault()
 				
@@ -16,16 +17,20 @@
 					datatype: 'json',
 					
 						success	: function(data){
-							//console.log(data)
-							var input_val 	= data.name;
-							$( ".item" ).append(input_val);
-							var dec_val		= data.description;
-							$( ".des" ).append(dec_val);
-							var dec_pri		= data.price;
-							$( ".pri" ).append(dec_pri);
-							
-							//console.log(input_val)
-						 	 
+							var html = $('<div class="container well col-md-8 pull-left"><button class=" gly glyphicon glyphicon-remove-sign pull-right"></button><button class="pri btn-info btn btn-sm pull-right">'+data.price+'</button><div class="item">'+data.name+'</div><div class="des pull-left">'+data.description+'</div>')
+							$('.on_page').append(html);
+							$('.glyphicon-remove-sign').click(function(){
+								$(html).remove();
+							})
+							/*var a = $('<div></div>').addClass('jumbotron');
+							var input_val 	= $('<h3>'+data.name+'</h3>').addClass('item pull-left')
+							$(a).append(input_val);
+							var dec_val		= $('<h5>'+data.description+'</h5>').addClass('item pull-left');
+							$(a).append(dec_val);
+							var pri_val		= $('<button>'+data.price+'</button>').addClass('btn-info btn-sm pull-right');
+							$(a).append(pri_val)
+							$('.on_page').append(a);*/
+
 					}
 				})
 			})			
