@@ -1,5 +1,17 @@
+	
 	$(document).ready(function(){
-
+			/*var xyz = $('.on_page')
+			$(xyz).click(function(event){
+			var target = $( event.target );
+			if ( target.is( " :button.gly") ) {
+				console.log(this)
+			$(this).parent('div').remove();
+		}
+		})*/
+		$('.on_page').on('click',":button.gly",function(){
+			//console.log(this)
+			$(this).parent('div').remove();
+		})
 			//$('on_page').load(/products)
 			$('#buton').click(function(event){	
 			event.preventDefault()
@@ -17,9 +29,9 @@
 					datatype: 'json',
 					
 						success	: function(data){
-							var html = $('<div class="container well col-md-8 pull-left"><button class=" gly glyphicon glyphicon-remove-sign pull-right"></button><button class="pri btn-info btn btn-sm pull-right">'+data.price+'</button><div class="item">'+data.name+'</div><div class="des pull-left">'+data.description+'</div>')
+							html = $('<div class="con container well col-md-8 pull-left"><button class=" gly glyphicon glyphicon-remove-sign pull-right"></button><button class="pri btn-info btn btn-sm pull-right">'+data.price+" $ "+'</button><div class="item">'+data.name+'</div><div class="des pull-left">'+data.description+'</div>')
 							$('.on_page').append(html);
-							$('.on_page').click(function(event){
+							/*$('.on_page').click(function(event){
 								
 								//alert("hello")
 								var target = $( event.target );
@@ -27,7 +39,7 @@
 									$(html).remove();
 							}
 								
-							});
+							});*/
 
 							
 							/*var a = $('<div></div>').addClass('jumbotron');
