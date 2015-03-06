@@ -9,35 +9,44 @@
 	</head>
 	<body>
 
+		<fieldset>
+		<form id = "daylist" action="users" method="post">
 		
-		<form id = "daylist" action="users" method="post">	
+		<p>	
+		<label for="cname">Name (required, at least 2 characters)</label>
+		<input id="cname" name="name" minlength="2" type="text" required>
+		</p>
+
 			First name:<font color="red"> *</font><br>
-			<input type="text" name="firstname" size="70" class="shadow">
-			<br>
+			 <input type="text" name="firstname" size="70" class="shadow">
+			 <br>
 			Middel name <br>
-			<input type="text" name="hiddelname" size="70" class="shadow">
-			<br>
+			 <input type="text" name="hiddelname" size="70" class="shadow">
+			 <br>
 			Last name:<font color="red"> *</font><br>
-			<input type="text" name="lastname" size="70" class="shadow">
-			<br>
-			 Home Phone no:<font color="red"> *</font><br>
+			 <input type="text" name="lastname" size="70" class="shadow">
+			 <br>
+			Home Phone no:<font color="red"> *</font><br>
 			 <input type="text" name="homephone" size="70" class="shadow">
 			 <br>
-			 cell no<br>
+			cell no<br>
 			 <input type="text" name="ellno" size="70" class="shadow">
 			 <br>
-			 Home Adress<br>
+			Home Adress<br>
 			 <textarea name="message" rows="5" cols="52" class="shadow" ></textarea><br>
-			 email:<font color="red"> *</font><br>
+			email:<font color="red"> *</font><br>
 			 <input type="text" name="email" size="70" class="shadow"><br><br>
 			
 			 <button type="button" value="Submit" class="shadow" id="button1"><font size="3px">submit</font></button>
 			
 		</form>
-		
+		</fieldset>
+		<br>
 				<div id="on_page"></div>
 				<script type="text/javascript" src="javascripts/jquery-1.6.1.min.js"></script>
+				<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.js"></script>
 				<script type="text/javascript" src="index.js" ></script>
+
 
 	</body>
 </html>
